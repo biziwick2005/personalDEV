@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biziwick Mvula — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <nav>
+    <div class="nav-logo">BIZZY<span>.dev</span></div>
+
+    <!-- Desktop links -->
+    <div class="nav-links" id="navLinks">
+      <a href="#skills"><i class="fa-solid fa-bolt"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a href="#skills" class="mobile-link" data-mobile-link>
+        <i class="fa-solid fa-bolt"></i> Skills
+      </a>
+      <a href="#projects" class="mobile-link" data-mobile-link>
+        <i class="fa-solid fa-diagram-project"></i> Projects
+      </a>
+      <a href="#about" class="mobile-link" data-mobile-link>
+        <i class="fa-solid fa-user"></i> About
+      </a>
+      <a href="#contact" class="mobile-link" data-mobile-link>
+        <i class="fa-solid fa-envelope"></i> Contact
+      </a>
+    </div>
+  </div>
+  <!-- Backdrop -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+      <div class="hero-text">
+        <div class="hero-tag">Available for work</div>
+        <h1 class="hero-name">
+          <span class="line"><span>BIZIWICK</span></span>
+          <span class="line"><span>CHIKUMBUTSO</span></span>
+          <span class="line"><span class="accent-word glitch">MVULA</span></span>
+        </h1>
+        <p class="hero-role">// FULL STACK DEVELOPER &amp; SOFTWARE ENGINEER</p>
+        <p class="hero-desc">
+          Crafting powerful digital experiences from database to UI.
+          Passionate about clean code, scalable architecture, and building
+          tools that make a real difference.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-side">
+        <div class="photo-container">
+          <div class="photo-ring"></div>
+          <div class="photo-ring"></div>
+          <div class="photo-ring"></div>
+          <div class="photo-glow"></div>
+          <div class="photo-frame">
+            <img src="2.jpeg" alt="Biziwick Chikumbutso Mvula" />
+            <div class="photo-scan"></div>
+          </div>
+          <div class="corner-tr"></div>
+          <div class="corner-bl"></div>
+          <div class="float-badge b1">
+            <i class="fa-brands fa-react" style="color:#61dafb"></i> React / Node.js
+          </div>
+          <div class="float-badge b2">
+            <i class="fa-brands fa-python" style="color:#3572A5"></i> Python / Django
+          </div>
+          <div class="float-badge b3">
+            <i class="fa-solid fa-database" style="color:#ff2f7b"></i> MongoDB / SQL
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section id="skills">
+      <div class="section-header">
+        <div class="section-tag">Capabilities</div>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-bolt" style="color:#00f0ff"></i></div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, performant UIs with modern frameworks and pixel-perfect design execution.</p>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fa-brands fa-react" style="color:#61dafb"></i> React</span>
+            <span class="tech-tag"><i class="fa-brands fa-vuejs" style="color:#42b883"></i> Vue.js</span>
+            <span class="tech-tag"><i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML/CSS</span>
+            <span class="tech-tag"><i class="fa-brands fa-js" style="color:#f7df1e"></i> JavaScript</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-gear" style="color:#7b2fff"></i></div>
+          <h3>Backend Development</h3>
+          <p>Designing robust APIs, microservices, and server-side logic that powers scalable applications.</p>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fa-brands fa-node-js" style="color:#68a063"></i> Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag"><i class="fa-brands fa-python" style="color:#3572A5"></i> Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag"><i class="fa-brands fa-php" style="color:#8892be"></i> PHP</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-database" style="color:#ff2f7b"></i></div>
+          <h3>Database &amp; Cloud</h3>
+          <p>Managing data with SQL/NoSQL databases and deploying to modern cloud platforms.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag"><i class="fa-brands fa-google" style="color:#ffca28"></i> Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen" style="color:#00f0ff"></i></div>
+          <h3>Mobile Development</h3>
+          <p>Cross-platform mobile apps delivering native experiences on both iOS and Android.</p>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fa-brands fa-react" style="color:#61dafb"></i> React Native</span>
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Expo</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-docker" style="color:#0db7ed"></i></div>
+          <h3>DevOps &amp; Tools</h3>
+          <p>Streamlining development workflows with version control, CI/CD, and containerization.</p>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fa-brands fa-git-alt" style="color:#f34f29"></i> Git</span>
+            <span class="tech-tag"><i class="fa-brands fa-docker" style="color:#0db7ed"></i> Docker</span>
+            <span class="tech-tag"><i class="fa-brands fa-linux" style="color:#fcc624"></i> Linux</span>
+            <span class="tech-tag"><i class="fa-brands fa-github"></i> GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-code" style="color:#7b2fff"></i></div>
+          <h3>Other Languages</h3>
+          <p>Versatile programming across multiple paradigms and languages for diverse project needs.</p>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fa-brands fa-java" style="color:#f89820"></i> Java</span>
+            <span class="tech-tag">C/C++</span>
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">Bash</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section id="projects">
+      <div class="section-header">
+        <div class="section-tag">Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-accent-bar"></div>
+          <div class="project-body">
+            <div class="project-num">01 / PROJECT</div>
+            <h3><i class="fa-solid fa-shop" style="color:#00f0ff"></i> E-Commerce Platform</h3>
+            <p>
+              Full-featured online store with product management, shopping cart, payment integration,
+              order tracking, and admin dashboard with real-time analytics.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-react" style="color:#61dafb"></i> React</span>
+              <span class="tech-tag"><i class="fa-brands fa-node-js" style="color:#68a063"></i> Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe API</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/YOUR_USERNAME/ecommerce" target="_blank" rel="noopener" class="project-github">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+              <a href="#" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-accent-bar"></div>
+          <div class="project-body">
+            <div class="project-num">02 / PROJECT</div>
+            <h3><i class="fa-solid fa-note-sticky" style="color:#7b2fff"></i> Notes Sharing App</h3>
+            <p>
+              Collaborative platform for students and professionals to create, organize,
+              and share notes with rich text editing, tags, and public/private visibility controls.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-vuejs" style="color:#42b883"></i> Vue.js</span>
+              <span class="tech-tag"><i class="fa-brands fa-python" style="color:#3572A5"></i> Django</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/YOUR_USERNAME/notes-app" target="_blank" rel="noopener" class="project-github">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+              <a href="#" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-accent-bar"></div>
+          <div class="project-body">
+            <div class="project-num">03 / PROJECT</div>
+            <h3><i class="fa-solid fa-clipboard-check" style="color:#ff2f7b"></i> Attendance App</h3>
+            <p>
+              Smart attendance tracking system for institutions with QR code check-ins,
+              automated reports, analytics dashboard, and admin management panel.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-react" style="color:#61dafb"></i> React Native</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag"><i class="fa-solid fa-qrcode"></i> QR Code</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/YOUR_USERNAME/attendance-app" target="_blank" rel="noopener" class="project-github">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+              <a href="#" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-accent-bar"></div>
+          <div class="project-body">
+            <div class="project-num">04 / PROJECT</div>
+            <h3><i class="fa-solid fa-rocket" style="color:#00f0ff"></i> Coming Soon</h3>
+            <p>
+              Next project in progress. Building something exciting — stay tuned for updates.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">TBD</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" class="project-github">
+                <i class="fa-brands fa-github"></i> GitHub Profile
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about">
+      <div class="about-text">
+        <div class="section-header">
+          <div class="section-tag">About</div>
+          <h2 class="section-title">Building the Future,<br/>One Line at a Time</h2>
+        </div>
+        <p>
+          I'm Biziwick Chikumbutso Mvula — a full stack developer with a deep passion for
+          turning complex problems into elegant, functional software. Based in Malawi, I work
+          across the full technology stack to deliver complete digital solutions.
+        </p>
+        <p>
+          From architecting backend systems to crafting pixel-perfect frontends, I thrive at
+          the intersection of design and engineering. I believe great software should be both
+          beautiful and reliable.
+        </p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num">3+</div>
+          <div class="stat-label"><i class="fa-solid fa-calendar-days" style="color:#00f0ff"></i> Years Coding</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">10+</div>
+          <div class="stat-label"><i class="fa-solid fa-cubes" style="color:#7b2fff"></i> Projects Built</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">8+</div>
+          <div class="stat-label"><i class="fa-solid fa-code" style="color:#ff2f7b"></i> Languages</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">∞</div>
+          <div class="stat-label"><i class="fa-solid fa-infinity" style="color:#00f0ff"></i> Lines of Code</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section id="contact">
+      <div class="contact-glow"></div>
+
+      <div class="contact-inner">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Let's Build Something<br/>Together</h2>
+        <p class="contact-subtitle">
+          Have a project in mind, a problem to solve, or just want to connect?
+          I'm always open to new opportunities and collaborations.
+        </p>
+
+        <!-- Email card -->
+        <div class="contact-card">
+          <p class="contact-email-label"><i class="fa-solid fa-envelope" style="color:#00f0ff"></i> Send me an email</p>
+          <a href="mailto:biziwickmvula@gmail.com" class="contact-email">biziwickmvula@gmail.com</a>
+        </div>
+
+        <div class="contact-divider">or find me on</div>
+
+        <!-- Social links -->
+        <div class="social-links">
+          <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" class="social-link social-github">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener" class="social-link social-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://twitter.com/YOUR_USERNAME" target="_blank" rel="noopener" class="social-link social-twitter">
+            <i class="fa-brands fa-x-twitter"></i> Twitter
+          </a>
+          <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener" class="social-link social-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-availability">
+          <i class="fa-solid fa-circle-dot" style="color:#22c55e"></i>
+          Open to freelance &amp; full-time roles
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <div class="footer-text">
+      &copy; 2025 <span>Biziwick Chikumbutso Mvula</span>. All rights reserved.
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/YOUR_USERNAME" target="_blank" rel="noopener" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
